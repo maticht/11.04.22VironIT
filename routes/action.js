@@ -3,10 +3,10 @@ const controller = require('../controllers/action')
 const router = express.Router()
 
 router.get('/', controller.getAllUsers)
-router.get('/:id', controller.getUsersById)
-router.delete('/:id', controller.deleteUsersById)
-router.post('/', controller.addUser)
-router.put('/', controller.overwriteAllUsers)
-router.put('/:id', controller.overwriteUsersById)
+    .get('/:id', controller.getUsersById)
+    .delete('/:id', controller.deleteUsersById)
+    .post('/', controller.addUser)
+    .put('/', controller.overwriteAllUsers)
+    .put('/:id', controller.overwriteUsersById)
 
 module.exports = router
